@@ -10,13 +10,13 @@ void swap(T &a, T &b){
 }
 
 void diagonal_max(double** &arr, const int &width){
-    double current_max = 0;
+    double current_max;
     int current_max_ind_i = 0, current_max_ind_j = 0;
     //начинаем гнать цикл где видт равен количеству элементов в диагонали попросту
     for(int c = 0; c < width; c++) {
         current_max_ind_i = 0;
-        current_max_ind_j = width;
-        current_max = arr[0][width];
+        current_max_ind_j = 0;
+        current_max = arr[1][0];
         //взял элемент который точно не будет в главной диагонали
         for (int i = 0; i < width; i++) {
             //здесь третий видт это вообщето хайт но мне впадлу создавать еще переменные (целую одну, а коммент писать не в падлу)
