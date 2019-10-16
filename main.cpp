@@ -14,7 +14,7 @@ void diagonal_max(double** &arr, const int &width){
     int current_max_ind_i = 0, current_max_ind_j = 0;
     //начинаем гнать цикл где видт равен количеству элементов в диагонали попросту
     for(int c = 0; c < width; c++) {
-        current_max_ind_i = 0;
+        current_max_ind_i = 1;
         current_max_ind_j = 0;
         current_max = arr[1][0];
         //взял элемент который точно не будет в главной диагонали
