@@ -27,22 +27,24 @@ int main() {
 	double x;
 	int k;
 	
-	cout << "Введите x (-1; 1), k (> 1): ";
+	cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ x (-1; 1), k (> 1): ";
 	cin >> x;
 	cin >> k;
 	cout.precision(10);
-	cout << "Результат через функцию: " << 1 / pow((1 + x), 3) << endl;
-	int a = 2, b = 3;
+	cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: " << 1 / pow((1 + x), 3) << endl;
+	int a = 2;
 	double result = 1.0;
+	int current_addendum;
 	while (true) {
-		if (fabs(pow(-1, a - 1) * a * b * pow(x, (a - 1)) / 2) > pow(10, (double)-k)) {
-			result += (pow(-1, a - 1) * a * b * pow(x, a - 1) / 2);
+		current_addendum = fabs(pow(-1, a - 1) * a * (a + 1) * pow(x, (a - 1)) / 2);
+		if (current_addendum > pow(10, (double)-k)) {
+			result += (pow(-1, a - 1) * a * (a + 1) * pow(x, a - 1) / 2);
 		}
 		else break;
 		a++;
 		b++;
 	};
 	cout.precision(k + 1);
-	cout << "Результат через формулу: " << result << endl;
+	cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: " << result << endl;
 	return 0;
 }
