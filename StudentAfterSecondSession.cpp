@@ -30,13 +30,10 @@ double StudentAfterSecondSession::CountAverageMark(int session) {
         return result;
     } else
     if(session == 2) {
-        for (int i = 0; i < 4; i++) {
-            result += firstSessionMarks[i];
-        }
         for (int i = 0; i < 5; i++) {
             result += secondSessionMarks[i];
         }
-        result /= 9;
+        result /= 5;
     }
         return result;
 }
