@@ -1,0 +1,28 @@
+group of aaa string
+repeats 3 times
+first appearance 1 line
+
+group of bbb string
+repeats 1 times
+first appearance 4 line
+
+group of ccc string
+repeats 2 times
+first appearance 5 line
+
+group of abba baab string
+repeats 2 times
+first appearance 7 line
+
+group of abba string
+repeats 2 times
+first appearance 9 line
+
+group of money string
+repeats 3 times
+first appearance 11 line
+
+group of abba string
+repeats 1 times
+first appearance 14 line
+
